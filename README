@@ -1,0 +1,27 @@
+# GoGPIO
+
+Nothing special about this repository, I am experimenting with GPIO on an ESP32
+device.
+
+## Setup
+
+### Install tinyGo
+
+https://tinygo.org/getting-started/install/macos/
+
+```
+brew tap tinygo-org/tools
+brew install tinygo
+```
+
+### Install ESP Toolkit
+
+**This worked for me, YMMV\***
+
+https://docs.espressif.com/projects/esp-idf/en/release-v3.0/get-started/linux-setup.html#standard-setup-of-toolchain-for-linux
+
+https://dl.espressif.com/dl/xtensa-esp32-elf-osx-1.22.0-80-g6c4433a-5.2.0.tar.gz
+
+### Install the blink app
+
+tinygo flash -target=esp32-wroom-32 -port=/dev/ttyUSB0 blink.go
